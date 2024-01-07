@@ -1,0 +1,12 @@
+{% extends 'layout_rec.html' %}
+{% block content %}
+    <h1>HOME</h1>
+    <br>
+    {% for post in posts %}
+        <div class="card">
+            <h2>{{ post.title }}</h2>
+            <p><i> By {{ post.author }} on {{ post.date_posted }}</i></p>
+            <p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,19 @@
+id,job_id,company,skill,location
+0,124,ICICI,net,Mumbai
+1,125,PwC,Java,Chennai
+2,126,Deloitte,Python,Hyderabad
+3,127,JP Morgan,ML,Mumbai
+4,128,Amazon,ML,Pune
+5,129,Netflix,AI,Hyderabad
+6,130,TCS,Java,Jaipur
+7,131,PwC,Java,Mumbai
+8,132,HDFC,net,Mumbai
+9,133,JP Morgan,Python,Guwahati
+10,134,Majesco,C++,Hyderabad
+11,135,Amazon,ML,Kolkata
+12,136,ICICI,net,Bangalore
+13,137,Deloitte,ML,Delhi
+14,138,TCS,C++,Bhopal
+15,139,Netflix,DS,Pune
+16,140,HDFC,DS,Pune
+17,141,JP Morgan,DS,Chennai

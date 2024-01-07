@@ -1,0 +1,49 @@
+{% extends "layout3.html" %}
+{% block content %}
+    <h1>Recruiter List</h1>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Company.." title="Type in a company name">
+
+    <table>
+      <thead>
+        <tr>
+            <th>Recruiter id</th>
+            <th>Company name</th>
+            <th>Email</th>
+            <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for recruiter in recruiters %}
+            <tr>
+                <td data-column="Recruiter id">{{ recruiter.id }}</td>
+                <td data-column="Company name">{{ recruiter.username }}</td>
+                <td data-column="Email">{{ recruiter.email }}</td>
+                <td data-column="Location">{{ recruiter.location }}</td>
+            </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("user_table");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+{% endblock content %}

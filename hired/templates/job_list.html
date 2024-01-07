@@ -1,0 +1,24 @@
+{% extends "layout3.html" %}
+{% block content %}
+    <h1>Jobs List</h1>
+    <table>
+      <thead>
+        <tr>
+            <th>Job id</th>
+            <th>Company</th>
+            <th>Skill</th>
+            <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for job in jobs %}
+            <tr>
+                <td data-column="Job id">{{ job.job_id }}</td>
+                <td data-column="Company">{{ job.company.username }}</td>
+                <td data-column="Skill">{{ job.skill }}</td>
+                <td data-column="Location">{{ job.location }}</td>
+            </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+{% endblock content %}

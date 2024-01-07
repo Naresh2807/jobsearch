@@ -1,0 +1,19 @@
+﻿id,username,email,image_file,degree_type,experience,major,skill_1,skill_1_level,dbms
+0,Kanupriya Jamwal,kanupriya15998kj@gmail.com,default.jpg,Btech,5,Computer Engineering,Java,1,MongoDB
+1,Arushi Jain,arushij@gmail.com,default.jpg,MSc,4,DataScience,Python,1,SQL
+2,Aayush Dhamija,"aayushdhamija14@gmail,com",default.jpg,BTech,5,Computer Engineering,Java,2,MongoDB
+3,Shreya Ghose,sg@gmail.com,default.jpg,Btech,6,Computer Engineering,Python,2,SQL
+4,Harshitha K,hk@gmail.com,default.jpg,Btech,3,Computer Engineering,Java,1,Oracle
+5,Dhairya Khale,gulludon@gmail.com,default.jpg,BSc,4,Computer Science,JS,2,Firebase
+6,Shadab Robin Khan,srk@gmail.com,default.jpg,BCA,5,Computer Science,C,1,Oracle
+7,Manan Bolia,mb@gmail.com,default.jpg,MCA,7,Computer Science,C++,2,Oracle
+8,Raj Bhagwani,rb@gmail.com,default.jpg,Btech,4,Computer Engineering,Unix,1,Oracle
+9,Vimohit Sooji,vs@gmail.com,default.jpg,Mtech,4,Data Science,JS,1,MongoDB
+10,Shivani Deshmukh,sd@gmail.com,default.jpg,BSc,3,Computer Science,C,2,Oracle
+11,Rohan Kumar,rokuog@gmail.com,default.jpg,Btech,2,Computer Engineering,Python,3,SQL
+12,Nivya Jomichan,chubs@gmail.com,default.jpg,Btech,1,Computer Engineering,Unix,2,Oracle
+13,Anushka Saklecha,as@gmail.com,default.jpg,Btech,6,Computer Engineering,C++,3,SQL
+14,Neelika C,nc@gmail.com,default.jpg,MSc,2,Computer Science,Java,2,SQL
+15,Tanaya B,tb@gmail.com,default.jpg,Btech,3,Computer Engineering,Java,3,Oracle
+16,Bhavya Seth,bs@gmail.com,default.jpg,MTech,5,Computer Science,Python,2,SQL
+17,Vrunda Patel,vp@gmail.com,default.jpg,BSc,2,Computer Science,JS,3,Firebase

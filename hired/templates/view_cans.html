@@ -1,0 +1,79 @@
+{% extends "layout3_rec.html" %}
+{% block content %}
+    <h1>Candidates List</h1>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for skills.." title="Type in a skill">
+    <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search for DBMS.." title="Type in a dbms">
+
+    <table id="user_table">
+      <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Degree</th>
+            <th>Experience</th>
+            <th>Major</th>
+            <th>Skill</th>
+            <th>Skill Level</th>
+            <th>DBMS</th>
+            <th>Job ID</th>
+        </tr>
+      </thead>
+      <tbody>
+          {% for user in users %}
+            <tr>
+                <td data-column="Username">{{ user.username }}</td>
+                <td data-column="Email">{{ user.email }}</td>
+                <td data-column="Degree">{{ user.degree_type }}</td>
+                <td data-column="Experience">{{ user.experience }}</td>
+                <td data-column="Major">{{ user.major }}</td>
+                <td data-column="Skill">{{ user.skill_1}}</td>
+                <td data-column="Skill Level">{{ user.skill_1_level }}</td>
+                <td data-column="DBMS">{{ user.dbms }}</td>
+                <td data-column="Job ID">{{ job_ids }}</td>
+            </tr>
+          {% endfor %}
+      </tbody>
+    </table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("user_table");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[5];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+function myFunction2() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("user_table");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[7];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+
+{% endblock content %}

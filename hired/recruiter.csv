@@ -1,0 +1,10 @@
+﻿username,email,image_file,location
+ICICI,hr@icici.com,default.jpg,Mumbai
+PwC,hr@pwc.com,default.jpg,Bangalore
+Deloitte,hr@deloitte.com,default.jpg,Delhi
+JP Morgan,hr@jpm.com,default.jpg,Pune
+Amazon,hr@amazon.com,default.jpg,Hyderabad
+Netflix,hr@netflix.com,default.jpg,Mumbai
+TCS,hr@tcs.com,default.jpg,Bangalore
+HDFC,hr@hdfc.com,default.jpg,Delhi
+Majesco,hr@majesco.com,default.jpg,Pune
